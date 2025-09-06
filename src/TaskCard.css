@@ -1,0 +1,95 @@
+.task-card {
+  border: 1px solid #ccc;
+  padding: 16px;
+  margin: 12px 0;
+  border-radius: 8px;
+  background: #fff;
+  cursor: pointer;
+  transition: box-shadow 0.2s;
+}
+
+.task-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.task-card h4 {
+  margin: 0 0 8px;
+}
+
+.task-title-input {
+  width: 100%;
+  padding: 6px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.task-desc {
+  min-height: 50px;
+  color: #555;
+  margin-bottom: 12px;
+}
+
+.subtasks-container {
+  margin-top: 12px;
+}
+
+.progress-bar {
+  background: #e0e0e0;
+  border-radius: 4px;
+  width: 100%;
+  height: 8px;
+  margin-bottom: 12px;
+  overflow: hidden;
+}
+
+.progress-bar-filled {
+  background-color: #007bff;
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+.subtask-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0 0 12px 0;
+}
+
+.subtask-list li {
+  margin-bottom: 6px;
+}
+
+.subtask-list label {
+  cursor: pointer;
+  user-select: none;
+}
+
+.subtask-list label.completed {
+  text-decoration: line-through;
+  color: #555;
+}
+
+.add-subtask {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.add-subtask input {
+  flex: 1;
+  padding: 6px;
+  font-size: 0.95rem;
+}
+
+.add-subtask button {
+  padding: 6px 12px;
+  background: #007bff;
+  border: none;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-subtask button:hover {
+  background: #0056b3;
+}
