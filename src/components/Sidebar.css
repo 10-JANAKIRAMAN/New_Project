@@ -1,0 +1,121 @@
+/* Sidebar container */
+.sidebar {
+  width: 260px;
+  background-color: #1e1e2f;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  transition: width 0.3s ease;
+  height: 100vh;
+  padding: 1rem;
+  overflow: hidden;
+}
+
+/* Collapsed sidebar */
+.sidebar.collapsed {
+  width: 80px;
+}
+
+/* Collapse button */
+.collapse-btn {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.collapse-btn:hover {
+  transform: scale(1.1);
+}
+
+/* Action buttons at the top */
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.action-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #2b2b3d;
+  border: none;
+  padding: 0.6rem 0.8rem;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.action-btn:hover {
+  background-color: #3d3d5c;
+  transform: translateX(2px);
+}
+
+.action-btn.primary {
+  background-color: #007bff;
+}
+
+/* Project list */
+.projects ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.projects li {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.projects li.active {
+  background-color: #3b3b58;
+  font-weight: bold;
+}
+
+.projects li:hover {
+  background-color: #2f2f47;
+  transform: translateX(3px);
+}
+
+/* Color dot for project labels */
+.color-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+/* Badge for task count */
+.badge {
+  margin-left: auto;
+  background-color: #444;
+  padding: 0.2rem 0.5rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
+}
+
+/* Footer */
+.sidebar-footer {
+  margin-top: auto;
+  font-size: 0.85rem;
+  opacity: 0.85;
+  border-top: 1px solid #333;
+  padding-top: 1rem;
+}
+
+/* Section title */
+.section-title {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  opacity: 0.8;
+}
